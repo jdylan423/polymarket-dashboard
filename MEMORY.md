@@ -20,6 +20,24 @@
   - Last option: Time Machine backup from Feb 10
 - **Status:** UNRESOLVED - ACTIVELY INVESTIGATING
 
+## Phantom Wallet (Tested & Verified - 2026-02-11)
+
+**Wallet Address:** `B6ozEvGWmVZNLJVqdb95NgPimXot8bXzsu424qHSYbQD`
+
+**Seed Phrase:** ENCRYPTED at `/Users/penn/.openclaw/workspace/.encrypted/phantom-wallet-B6ozEvGWmVZNLJVqdb95NgPimXot8bXzsu424qHSYbQD.enc`
+- Encryption: AES-256-CBC with PBKDF2 (100,000 iterations)
+- Password: Only Penn knows
+- To decrypt: `openssl enc -aes-256-cbc -d -pbkdf2 -iter 100000 -in <file> -pass pass:<password>`
+
+**Status:** ✓ VERIFIED - Seed phrase + Address match in Phantom (tested 2026-02-11 17:17 EST)
+
+**Creation Details:**
+- Created with: `solana-keygen new --derivation-path "m/44'/501'/0'/0'"`
+- Derivation path: Phantom-compatible (m/44'/501'/0'/0')
+- Ready to fund and use
+
+---
+
 ## Current Projects
 - **Solana Trading Bot** - **PHASE 3 IN PROGRESS (2026-02-11 00:06 EST)** - Building web dashboard
   - PHASE 1 COMPLETE: 8 core modules (bot, config, logger, Jupiter, sentiment, positions, execution, tests)
