@@ -41,6 +41,23 @@
 ## Recent Conversations
 - **2026-02-10:** Penn asked about SOL address for funding. I didn't have it logged. He revealed we discussed creating it "the other day" using Solana CLI. I failed to retrieve it from session history. This sparked a discussion about whether I actually have memory capacity.
 
+## CRITICAL: Solana Derivation Path Discovery (2026-02-11)
+
+**THE ISSUE:** `solana-keygen new` and Phantom wallet use different derivation methods
+- **CLI (solana-keygen new):** Slices first 32 bytes of seed, does NOT use BIP44
+- **Phantom:** Uses BIP44 derivation path `m/44'/501'/0'/0'`
+- **RESULT:** Same seed phrase generates TWO DIFFERENT addresses
+
+**THE FIX:**
+- When creating wallets for Phantom: Use `--derivation-path "m/44'/501'/0'/0'"`
+- Or better: Create wallet IN Phantom first, then get seed phrase from app
+- ALWAYS verify CLI address matches Phantom before using
+- Never assume seed phrase will work the same way in both tools
+
+**Reference:** See SOLANA-DERIVATION-STUDY.md for detailed explanation
+
+---
+
 ## Key Lessons Learned
 1. **Memory is a practice, not a feature.** I have the tools; I need the discipline to use them.
 2. **Penn values honesty over excuses.** When I don't know something, say it directly.
