@@ -1,10 +1,25 @@
 // pages/api/trades.js
 // API endpoint to fetch trades data
+// Supports both local file (trades.json) and Supabase database
 
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+// Supabase client (optional)
+let supabase = null;
+if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  try {
+    const { createClient } = require('@supabase/supabase-js');
+    supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    );
+  } catch (e) {
+    console.log('Supabase client not available');
+  }
+}
+
+export default async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -24,14 +39,6 @@ export default function handler(req, res) {
   }
 
   try {
-    // Try to read trades.json from the bot directory
-    const tradesPath = path.join(
-      process.cwd(),
-      '..',
-      'polymarket-paper-trader',
-      'trades.json'
-    );
-
     let tradesData = {
       trades: [],
       stats: {
@@ -45,31 +52,55 @@ export default function handler(req, res) {
       }
     };
 
-    // Try to read from local file if it exists
+    // Try Supabase first if configured
+    if (supabase) {
+      try {
+        // Fetch trades
+        const { data: trades, error: tradesError } = await supabase
+          .from('trades')
+          .select('*')
+          .order('created_at', { ascending: false });
+
+        if (!tradesError && trades) {
+          tradesData.trades = trades;
+        }
+
+        // Fetch stats
+        const { data: stats, error: statsError } = await supabase
+          .from('stats')
+          .select('*')
+          .eq('id', 1)
+          .single();
+
+        if (!statsError && stats) {
+          tradesData.stats = stats;
+        }
+
+        // Successfully got Supabase data
+        if (tradesData.trades.length > 0 || tradesData.stats.total_trades > 0) {
+          res.status(200).json(tradesData);
+          return;
+        }
+      } catch (supabaseError) {
+        console.log('Supabase fetch failed, falling back to local file');
+      }
+    }
+
+    // Fall back to local trades.json file
+    const tradesPath = path.join(
+      process.cwd(),
+      '..',
+      'polymarket-paper-trader',
+      'trades.json'
+    );
+
     try {
       if (fs.existsSync(tradesPath)) {
         const fileContent = fs.readFileSync(tradesPath, 'utf8');
         tradesData = JSON.parse(fileContent);
       }
     } catch (fileError) {
-      // File doesn't exist or can't be read - return empty data
-      console.log('Trades file not found, returning empty data');
-    }
-
-    // If still no data, try to read from demo/example data
-    if (!tradesData.trades || tradesData.trades.length === 0) {
-      tradesData = {
-        trades: [],
-        stats: {
-          total_trades: 0,
-          wins: 0,
-          losses: 0,
-          win_rate: 0,
-          total_pnl: 0,
-          consecutive_losses: 0,
-          avg_pnl_pct: 0
-        }
-      };
+      console.log('Local trades file not found or invalid');
     }
 
     res.status(200).json(tradesData);

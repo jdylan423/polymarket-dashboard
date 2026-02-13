@@ -2,7 +2,7 @@
 
 strategy:
   # Position sizing
-  position_size: 10.0              # Max $ per trade
+  position_size: 5.0               # Max $ per trade (changed from $10 to $5)
   target_spread: 0.03              # Target 3% profit per trade
   
   # Circuit breaker
