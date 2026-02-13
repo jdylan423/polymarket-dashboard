@@ -1,0 +1,691 @@
+{
+  "video_1": {
+    "frames": [
+      {
+        "index": 0,
+        "timestamp": 0.0,
+        "filename": "v1_frame_001.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(151,130,155)",
+        "brightness": "medium"
+      },
+      {
+        "index": 1,
+        "timestamp": 0.5,
+        "filename": "v1_frame_002.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(151,130,158)",
+        "brightness": "medium"
+      },
+      {
+        "index": 2,
+        "timestamp": 1.0,
+        "filename": "v1_frame_003.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(149,124,152)",
+        "brightness": "medium"
+      },
+      {
+        "index": 3,
+        "timestamp": 1.5,
+        "filename": "v1_frame_004.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(147,123,150)",
+        "brightness": "medium"
+      },
+      {
+        "index": 4,
+        "timestamp": 2.0,
+        "filename": "v1_frame_005.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(147,121,149)",
+        "brightness": "medium"
+      },
+      {
+        "index": 5,
+        "timestamp": 2.5,
+        "filename": "v1_frame_006.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(148,123,150)",
+        "brightness": "medium"
+      },
+      {
+        "index": 6,
+        "timestamp": 3.0,
+        "filename": "v1_frame_007.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(152,130,159)",
+        "brightness": "medium"
+      },
+      {
+        "index": 7,
+        "timestamp": 3.5,
+        "filename": "v1_frame_008.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(158,151,172)",
+        "brightness": "medium"
+      },
+      {
+        "index": 8,
+        "timestamp": 4.0,
+        "filename": "v1_frame_009.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(145,133,157)",
+        "brightness": "medium"
+      },
+      {
+        "index": 9,
+        "timestamp": 4.5,
+        "filename": "v1_frame_010.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(144,128,154)",
+        "brightness": "medium"
+      },
+      {
+        "index": 10,
+        "timestamp": 5.0,
+        "filename": "v1_frame_011.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(145,131,155)",
+        "brightness": "medium"
+      },
+      {
+        "index": 11,
+        "timestamp": 5.5,
+        "filename": "v1_frame_012.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(145,132,155)",
+        "brightness": "medium"
+      },
+      {
+        "index": 12,
+        "timestamp": 6.0,
+        "filename": "v1_frame_013.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(145,131,154)",
+        "brightness": "medium"
+      },
+      {
+        "index": 13,
+        "timestamp": 6.5,
+        "filename": "v1_frame_014.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(144,129,153)",
+        "brightness": "medium"
+      },
+      {
+        "index": 14,
+        "timestamp": 7.0,
+        "filename": "v1_frame_015.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(145,130,154)",
+        "brightness": "medium"
+      },
+      {
+        "index": 15,
+        "timestamp": 7.5,
+        "filename": "v1_frame_016.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(146,131,155)",
+        "brightness": "medium"
+      },
+      {
+        "index": 16,
+        "timestamp": 8.0,
+        "filename": "v1_frame_017.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(149,132,157)",
+        "brightness": "medium"
+      },
+      {
+        "index": 17,
+        "timestamp": 8.5,
+        "filename": "v1_frame_018.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(156,145,168)",
+        "brightness": "medium"
+      },
+      {
+        "index": 18,
+        "timestamp": 9.0,
+        "filename": "v1_frame_019.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(150,145,163)",
+        "brightness": "medium"
+      },
+      {
+        "index": 19,
+        "timestamp": 9.5,
+        "filename": "v1_frame_020.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(142,135,154)",
+        "brightness": "medium"
+      },
+      {
+        "index": 20,
+        "timestamp": 10.0,
+        "filename": "v1_frame_021.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(142,138,155)",
+        "brightness": "medium"
+      },
+      {
+        "index": 21,
+        "timestamp": 10.5,
+        "filename": "v1_frame_022.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(142,137,154)",
+        "brightness": "medium"
+      },
+      {
+        "index": 22,
+        "timestamp": 11.0,
+        "filename": "v1_frame_023.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(141,136,152)",
+        "brightness": "medium"
+      }
+    ],
+    "duration": 11.41,
+    "fps": 29.86
+  },
+  "video_2": {
+    "frames": [
+      {
+        "index": 0,
+        "timestamp": 0.0,
+        "filename": "v2_frame_001.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,75,80)",
+        "brightness": "dark"
+      },
+      {
+        "index": 1,
+        "timestamp": 0.5,
+        "filename": "v2_frame_002.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,76,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 2,
+        "timestamp": 1.0,
+        "filename": "v2_frame_003.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(85,74,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 3,
+        "timestamp": 1.5,
+        "filename": "v2_frame_004.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(84,73,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 4,
+        "timestamp": 2.0,
+        "filename": "v2_frame_005.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(85,73,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 5,
+        "timestamp": 2.5,
+        "filename": "v2_frame_006.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(68,59,63)",
+        "brightness": "dark"
+      },
+      {
+        "index": 6,
+        "timestamp": 3.0,
+        "filename": "v2_frame_007.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(67,58,62)",
+        "brightness": "dark"
+      },
+      {
+        "index": 7,
+        "timestamp": 3.5,
+        "filename": "v2_frame_008.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(85,72,76)",
+        "brightness": "dark"
+      },
+      {
+        "index": 8,
+        "timestamp": 4.0,
+        "filename": "v2_frame_009.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(86,73,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 9,
+        "timestamp": 4.5,
+        "filename": "v2_frame_010.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(86,74,78)",
+        "brightness": "dark"
+      },
+      {
+        "index": 10,
+        "timestamp": 5.0,
+        "filename": "v2_frame_011.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(86,73,77)",
+        "brightness": "dark"
+      },
+      {
+        "index": 11,
+        "timestamp": 5.5,
+        "filename": "v2_frame_012.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(86,74,78)",
+        "brightness": "dark"
+      },
+      {
+        "index": 12,
+        "timestamp": 6.0,
+        "filename": "v2_frame_013.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(86,73,77)",
+        "brightness": "dark"
+      }
+    ],
+    "duration": 6.53,
+    "fps": 29.81
+  },
+  "video_3": {
+    "frames": [
+      {
+        "index": 0,
+        "timestamp": 0.0,
+        "filename": "v3_frame_001.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,68,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 1,
+        "timestamp": 0.5,
+        "filename": "v3_frame_002.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 2,
+        "timestamp": 1.0,
+        "filename": "v3_frame_003.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(91,70,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 3,
+        "timestamp": 1.5,
+        "filename": "v3_frame_004.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 4,
+        "timestamp": 2.0,
+        "filename": "v3_frame_005.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(90,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 5,
+        "timestamp": 2.5,
+        "filename": "v3_frame_006.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(90,70,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 6,
+        "timestamp": 3.0,
+        "filename": "v3_frame_007.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 7,
+        "timestamp": 3.5,
+        "filename": "v3_frame_008.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(85,65,70)",
+        "brightness": "dark"
+      },
+      {
+        "index": 8,
+        "timestamp": 4.0,
+        "filename": "v3_frame_009.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(92,73,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 9,
+        "timestamp": 4.5,
+        "filename": "v3_frame_010.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(91,70,71)",
+        "brightness": "dark"
+      },
+      {
+        "index": 10,
+        "timestamp": 5.0,
+        "filename": "v3_frame_011.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(94,74,76)",
+        "brightness": "dark"
+      },
+      {
+        "index": 11,
+        "timestamp": 5.5,
+        "filename": "v3_frame_012.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(92,71,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 12,
+        "timestamp": 6.0,
+        "filename": "v3_frame_013.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(91,71,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 13,
+        "timestamp": 6.5,
+        "filename": "v3_frame_014.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 14,
+        "timestamp": 7.0,
+        "filename": "v3_frame_015.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 15,
+        "timestamp": 7.5,
+        "filename": "v3_frame_016.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 16,
+        "timestamp": 8.0,
+        "filename": "v3_frame_017.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,73)",
+        "brightness": "dark"
+      },
+      {
+        "index": 17,
+        "timestamp": 8.5,
+        "filename": "v3_frame_018.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 18,
+        "timestamp": 9.0,
+        "filename": "v3_frame_019.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(94,73,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 19,
+        "timestamp": 9.5,
+        "filename": "v3_frame_020.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(93,72,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 20,
+        "timestamp": 10.0,
+        "filename": "v3_frame_021.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 21,
+        "timestamp": 10.5,
+        "filename": "v3_frame_022.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 22,
+        "timestamp": 11.0,
+        "filename": "v3_frame_023.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(89,69,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 23,
+        "timestamp": 11.5,
+        "filename": "v3_frame_024.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(90,68,72)",
+        "brightness": "dark"
+      },
+      {
+        "index": 24,
+        "timestamp": 12.0,
+        "filename": "v3_frame_025.jpg",
+        "size": [
+          720,
+          480
+        ],
+        "avg_color": "rgb(90,69,72)",
+        "brightness": "dark"
+      }
+    ],
+    "duration": 12.56,
+    "fps": 29.74
+  }
+}

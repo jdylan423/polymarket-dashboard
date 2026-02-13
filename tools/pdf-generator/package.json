@@ -1,0 +1,25 @@
+{
+  "name": "pdf-generator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node.js CLI to generate professional PDF reports from Markdown or HTML using Playwright.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bin": {
+    "pdf-gen": "./src/cli.js"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "test:sample": "node ./src/cli.js ../../laundromat-report-week1.md ./out/laundromat-report-week1.pdf",
+    "lint": "node -c ./src/cli.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-table-of-contents": "^0.9.0",
+    "mime-types": "^2.1.35",
+    "playwright": "^1.50.0",
+    "yargs": "^17.7.2"
+  }
+}

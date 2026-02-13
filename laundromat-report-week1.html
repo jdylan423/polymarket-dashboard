@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>laundromat-report-week1</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#laundromat-investment-research-report---week-1"
+id="toc-laundromat-investment-research-report---week-1">Laundromat
+Investment Research Report - Week 1</a>
+<ul>
+<li><a href="#comprehensive-market-analysis-active-listings-evaluation"
+id="toc-comprehensive-market-analysis-active-listings-evaluation">Comprehensive
+Market Analysis &amp; Active Listings Evaluation</a></li>
+<li><a href="#executive-summary" id="toc-executive-summary">EXECUTIVE
+SUMMARY</a></li>
+<li><a href="#strongest-markets-for-laundromat-investment"
+id="toc-strongest-markets-for-laundromat-investment">1. STRONGEST
+MARKETS FOR LAUNDROMAT INVESTMENT</a>
+<ul>
+<li><a href="#top-5-metro-markets-ranked-by-investment-potential"
+id="toc-top-5-metro-markets-ranked-by-investment-potential">Top 5 Metro
+Markets (Ranked by Investment Potential)</a></li>
+<li><a href="#market-selection-criteria-site-specific-requirements"
+id="toc-market-selection-criteria-site-specific-requirements">Market
+Selection Criteria (Site-Specific Requirements)</a></li>
+</ul></li>
+<li><a href="#investment-potential-analysis"
+id="toc-investment-potential-analysis">2. INVESTMENT POTENTIAL
+ANALYSIS</a>
+<ul>
+<li><a href="#revenue-profitability-benchmarks"
+id="toc-revenue-profitability-benchmarks">Revenue &amp; Profitability
+Benchmarks</a></li>
+<li><a href="#return-on-investment-roi-analysis"
+id="toc-return-on-investment-roi-analysis">Return on Investment (ROI)
+Analysis</a></li>
+<li><a href="#service-model-revenue-mix-2025-trends"
+id="toc-service-model-revenue-mix-2025-trends">Service Model Revenue Mix
+(2025 Trends)</a></li>
+</ul></li>
+<li><a href="#complete-risk-assessment"
+id="toc-complete-risk-assessment">3. COMPLETE RISK ASSESSMENT</a>
+<ul>
+<li><a href="#risk-matrix-with-mitigation-strategies"
+id="toc-risk-matrix-with-mitigation-strategies">Risk Matrix with
+Mitigation Strategies</a></li>
+<li><a href="#operational-risk-details"
+id="toc-operational-risk-details">Operational Risk Details</a></li>
+<li><a href="#black-swan-events" id="toc-black-swan-events">Black Swan
+Events</a></li>
+</ul></li>
+<li><a href="#upfront-costs-breakdown"
+id="toc-upfront-costs-breakdown">4. UPFRONT COSTS BREAKDOWN</a>
+<ul>
+<li><a href="#total-startup-capital-required"
+id="toc-total-startup-capital-required">Total Startup Capital
+Required</a></li>
+<li><a href="#detailed-cost-components"
+id="toc-detailed-cost-components">Detailed Cost Components</a></li>
+<li><a href="#financing-options" id="toc-financing-options">Financing
+Options</a></li>
+</ul></li>
+<li><a href="#active-listings-analysis-10-opportunities"
+id="toc-active-listings-analysis-10-opportunities">5. ACTIVE LISTINGS
+ANALYSIS (10 Opportunities)</a>
+<ul>
+<li><a href="#listing-1-memphis-tn---multi-store-portfolio"
+id="toc-listing-1-memphis-tn---multi-store-portfolio">Listing #1:
+Memphis, TN - Multi-Store Portfolio ⭐⭐⭐⭐⭐</a></li>
+<li><a href="#listing-2-st.-petersburg-fl"
+id="toc-listing-2-st.-petersburg-fl">Listing #2: St. Petersburg, FL
+⭐⭐⭐⭐</a></li>
+<li><a href="#listing-3-compton-ca"
+id="toc-listing-3-compton-ca">Listing #3: Compton, CA ⭐⭐⭐</a></li>
+<li><a href="#listing-4-harper-kansas"
+id="toc-listing-4-harper-kansas">Listing #4: Harper, Kansas
+⭐⭐⭐⭐</a></li>
+<li><a href="#listing-5-manteca-ca"
+id="toc-listing-5-manteca-ca">Listing #5: Manteca, CA ⭐⭐⭐</a></li>
+<li><a href="#listing-6-cheyenne-wy"
+id="toc-listing-6-cheyenne-wy">Listing #6: Cheyenne, WY
+⭐⭐⭐⭐</a></li>
+<li><a href="#listing-7-inland-empirepomona-ca"
+id="toc-listing-7-inland-empirepomona-ca">Listing #7: Inland
+Empire/Pomona, CA ⭐⭐⭐</a></li>
+<li><a href="#listing-8-cabot-ar" id="toc-listing-8-cabot-ar">Listing
+#8: Cabot, AR ⭐⭐⭐⭐</a></li>
+<li><a href="#listing-9-fort-wortheuless-tx"
+id="toc-listing-9-fort-wortheuless-tx">Listing #9: Fort Worth/Euless, TX
+⭐⭐⭐⭐</a></li>
+<li><a href="#listing-10-wellington-ks---multi-asset"
+id="toc-listing-10-wellington-ks---multi-asset">Listing #10: Wellington,
+KS - Multi-Asset ⭐⭐⭐</a></li>
+</ul></li>
+<li><a href="#investment-quality-ranking"
+id="toc-investment-quality-ranking">6. INVESTMENT QUALITY RANKING</a>
+<ul>
+<li><a href="#top-3-recommendations-for-immediate-action"
+id="toc-top-3-recommendations-for-immediate-action">Top 3
+Recommendations for Immediate Action</a></li>
+<li><a href="#investment-strategy-by-buyer-profile"
+id="toc-investment-strategy-by-buyer-profile">Investment Strategy by
+Buyer Profile</a></li>
+</ul></li>
+<li><a href="#due-diligence-checklist"
+id="toc-due-diligence-checklist">7. DUE DILIGENCE CHECKLIST</a>
+<ul>
+<li><a href="#financial-verification"
+id="toc-financial-verification">Financial Verification ✅</a></li>
+<li><a href="#physical-inspection" id="toc-physical-inspection">Physical
+Inspection ✅</a></li>
+<li><a href="#market-analysis" id="toc-market-analysis">Market Analysis
+✅</a></li>
+<li><a href="#legalregulatory" id="toc-legalregulatory">Legal/Regulatory
+✅</a></li>
+<li><a href="#seller-verification" id="toc-seller-verification">Seller
+Verification ✅</a></li>
+</ul></li>
+<li><a href="#contact-sheet-for-follow-up"
+id="toc-contact-sheet-for-follow-up">8. CONTACT SHEET FOR FOLLOW-UP</a>
+<ul>
+<li><a href="#priority-1-contacts-call-this-week"
+id="toc-priority-1-contacts-call-this-week">Priority 1 Contacts (Call
+This Week)</a></li>
+<li><a href="#priority-2-contacts-call-after-initial-review"
+id="toc-priority-2-contacts-call-after-initial-review">Priority 2
+Contacts (Call After Initial Review)</a></li>
+<li><a href="#priority-3-contacts-research-further-before-contact"
+id="toc-priority-3-contacts-research-further-before-contact">Priority 3
+Contacts (Research Further Before Contact)</a></li>
+<li><a href="#additional-listing-platforms"
+id="toc-additional-listing-platforms">Additional Listing
+Platforms</a></li>
+</ul></li>
+<li><a href="#financing-pre-approval-strategy"
+id="toc-financing-pre-approval-strategy">9. FINANCING PRE-APPROVAL
+STRATEGY</a>
+<ul>
+<li><a href="#recommended-lenders"
+id="toc-recommended-lenders">Recommended Lenders</a></li>
+<li><a href="#documents-needed-for-pre-approval"
+id="toc-documents-needed-for-pre-approval">Documents Needed for
+Pre-Approval</a></li>
+</ul></li>
+<li><a href="#next-steps-action-plan"
+id="toc-next-steps-action-plan">10. NEXT STEPS &amp; ACTION PLAN</a>
+<ul>
+<li><a href="#week-1-actions-immediate"
+id="toc-week-1-actions-immediate">Week 1 Actions (Immediate)</a></li>
+<li><a href="#week-2-4-due-diligence-phase"
+id="toc-week-2-4-due-diligence-phase">Week 2-4: Due Diligence
+Phase</a></li>
+<li><a href="#week-5-8-closing-phase"
+id="toc-week-5-8-closing-phase">Week 5-8: Closing Phase</a></li>
+</ul></li>
+<li><a href="#appendix-a-industry-data-sources"
+id="toc-appendix-a-industry-data-sources">APPENDIX A: INDUSTRY DATA
+SOURCES</a></li>
+<li><a href="#appendix-b-valuation-calculator"
+id="toc-appendix-b-valuation-calculator">APPENDIX B: VALUATION
+CALCULATOR</a></li>
+<li><a href="#conclusion" id="toc-conclusion">CONCLUSION</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="laundromat-investment-research-report---week-1">Laundromat
+Investment Research Report - Week 1</h1>
+<h2
+id="comprehensive-market-analysis-active-listings-evaluation">Comprehensive
+Market Analysis &amp; Active Listings Evaluation</h2>
+<p><strong>Report Date:</strong> February 5, 2026<br />
+<strong>Research Period:</strong> Week 1 (Inaugural Report)<br />
+<strong>Prepared For:</strong> Investment Decision &amp; Due
+Diligence</p>
+<hr />
+<h2 id="executive-summary">EXECUTIVE SUMMARY</h2>
+<p>The U.S. laundromat industry represents a $6.8 billion market with
+exceptional resilience and profitability characteristics. This report
+identifies prime investment opportunities based on current market data,
+active listings analysis, and comprehensive risk assessment.</p>
+<p><strong>Key Findings:</strong> - <strong>Industry Success
+Rate:</strong> 94.8-95% over 5 years (highest among small businesses) -
+<strong>Profit Margins:</strong> 20-35% EBITDA typical for well-operated
+stores - <strong>Market Size:</strong> $6.8B U.S. market, 29,500-35,000
+active locations - <strong>Valuation Multiples:</strong> 3-5x SDE or
+cash flow for established businesses - <strong>ROI
+Expectations:</strong> 15-30% IRR with 34-50 month payback periods -
+<strong>Active Listings:</strong> 750+ businesses currently available
+nationwide</p>
+<hr />
+<h2 id="strongest-markets-for-laundromat-investment">1. STRONGEST
+MARKETS FOR LAUNDROMAT INVESTMENT</h2>
+<h3 id="top-5-metro-markets-ranked-by-investment-potential">Top 5 Metro
+Markets (Ranked by Investment Potential)</h3>
+<h4 id="phoenix-arizona">🥇 <strong>1. Phoenix, Arizona</strong></h4>
+<ul>
+<li><strong>Urban Density:</strong> 8,000+ people per sq mi</li>
+<li><strong>Rental Rate:</strong> 57% of households rent (high in-unit
+laundry limitation)</li>
+<li><strong>Population Growth:</strong> +50,000 annually</li>
+<li><strong>Renter Income Growth:</strong> 41.6% over 5 years (2nd
+highest nationally)</li>
+<li><strong>Market Characteristics:</strong> Fast-growing Sunbelt
+market, strong rental demand</li>
+<li><strong>Investment Thesis:</strong> Explosive population growth +
+high rental rates = sustained demand</li>
+</ul>
+<h4 id="houston-texas">🥈 <strong>2. Houston, Texas</strong></h4>
+<ul>
+<li><strong>Urban Density:</strong> High-density workforce housing
+corridors</li>
+<li><strong>Rental Rate:</strong> 55% of households rent</li>
+<li><strong>Market Size:</strong> 4th largest U.S. metro, diverse
+economy</li>
+<li><strong>Opportunity:</strong> Underserved neighborhoods in Pleasant
+Grove, South Houston</li>
+<li><strong>Investment Thesis:</strong> Affordable cost of entry, strong
+cash flow potential, scale opportunities</li>
+</ul>
+<h4 id="atlanta-georgia">🥉 <strong>3. Atlanta, Georgia</strong></h4>
+<ul>
+<li><strong>Urban Density:</strong> 8,500+ people per sq mi in core
+areas</li>
+<li><strong>Rental Rate:</strong> 58% of households rent</li>
+<li><strong>Population Growth:</strong> Consistent Southeast anchor
+market growth</li>
+<li><strong>Market Characteristics:</strong> Institutional investment
+depth, strong demographics</li>
+<li><strong>Investment Thesis:</strong> Stable growth market with
+professional management opportunities</li>
+</ul>
+<h4 id="dallas-fort-worth-texas"><strong>4. Dallas-Fort Worth,
+Texas</strong></h4>
+<ul>
+<li><strong>Urban Density:</strong> Multiple high-density corridors</li>
+<li><strong>Rental Rate:</strong> 52% of households rent</li>
+<li><strong>Economic Drivers:</strong> Logistics, healthcare, retail,
+finance sectors</li>
+<li><strong>Affordable Areas:</strong> Pleasant Grove, Garland, South
+Dallas</li>
+<li><strong>Investment Thesis:</strong> Economic diversification +
+population influx = resilient customer base</li>
+</ul>
+<h4 id="los-angelessouthern-california"><strong>5. Los Angeles/Southern
+California</strong></h4>
+<ul>
+<li><strong>Urban Density:</strong> 12,000+ people per sq mi (highest
+nationally)</li>
+<li><strong>Rental Rate:</strong> 65%+ in core urban areas</li>
+<li><strong>Market Characteristics:</strong> Mature market with premium
+pricing power</li>
+<li><strong>Water Costs:</strong> Higher utility costs (mitigated by
+pricing pass-through)</li>
+<li><strong>Investment Thesis:</strong> Highest revenue per store
+potential, established customer behavior</li>
+</ul>
+<h3 id="market-selection-criteria-site-specific-requirements">Market
+Selection Criteria (Site-Specific Requirements)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 40%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Minimum Threshold</th>
+<th>Optimal Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Urban Density</strong></td>
+<td>8,000+ people/sq mi</td>
+<td>10,000-15,000/sq mi</td>
+</tr>
+<tr>
+<td><strong>Rental Share</strong></td>
+<td>&gt;50% of households</td>
+<td>55-70%</td>
+</tr>
+<tr>
+<td><strong>Median HH Income</strong></td>
+<td>$35,000-$75,000</td>
+<td>$40,000-$65,000</td>
+</tr>
+<tr>
+<td><strong>Competition Radius</strong></td>
+<td>&lt;1 competitor per 5,000 residents</td>
+<td>Exclusive 0.5-mile radius</td>
+</tr>
+<tr>
+<td><strong>Parking/Transit</strong></td>
+<td>10+ stalls or high foot traffic</td>
+<td>15+ stalls + transit access</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>Street-level visibility</td>
+<td>Corner location with signage</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="investment-potential-analysis">2. INVESTMENT POTENTIAL
+ANALYSIS</h2>
+<h3 id="revenue-profitability-benchmarks">Revenue &amp; Profitability
+Benchmarks</h3>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 31%" />
+<col style="width: 31%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Self-Service Model</th>
+<th>Full-Service Model</th>
+<th>Hybrid Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual Revenue</strong></td>
+<td>$200,000-$350,000</td>
+<td>$300,000-$500,000</td>
+<td>$400,000-$750,000</td>
+</tr>
+<tr>
+<td><strong>Gross Margin</strong></td>
+<td>40-55%</td>
+<td>30-45%</td>
+<td>35-50%</td>
+</tr>
+<tr>
+<td><strong>EBITDA Margin</strong></td>
+<td>20-25%</td>
+<td>15-20%</td>
+<td>20-30%</td>
+</tr>
+<tr>
+<td><strong>Net Cash Flow</strong></td>
+<td>$40,000-$87,500</td>
+<td>$45,000-$100,000</td>
+<td>$80,000-$225,000</td>
+</tr>
+<tr>
+<td><strong>Labor % of Sales</strong></td>
+<td>5-10%</td>
+<td>25-35%</td>
+<td>15-25%</td>
+</tr>
+<tr>
+<td><strong>Utility % of Sales</strong></td>
+<td>15-20%</td>
+<td>18-25%</td>
+<td>16-22%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-on-investment-roi-analysis">Return on Investment (ROI)
+Analysis</h3>
+<p><strong>Valuation Multiples (Market-Based):</strong> - <strong>SDE
+Multiple:</strong> 3.10x - 4.25x (most common for small operations) -
+<strong>EBITDA Multiple:</strong> 3.4x - 4.8x (larger operations,
+multi-store) - <strong>Cash Flow Multiple:</strong> 3.0x - 5.5x
+(California standard: 36-66 months) - <strong>Revenue Multiple:</strong>
+1.15x - 1.18x (distressed or turnaround situations)</p>
+<p><strong>Equipment Age Impact on Valuation:</strong> - <strong>0-5
+years old:</strong> 4.5-5.5x cash flow multiple - <strong>6-12 years
+old:</strong> 4.0-4.5x cash flow multiple - <strong>13-16 years
+old:</strong> 3.5-4.0x cash flow multiple - <strong>17+ years
+old:</strong> Major discount (equipment replacement pending)</p>
+<p><strong>Expected IRR by Scenario:</strong></p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 27%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>IRR Range</th>
+<th>Payback Period</th>
+<th>Cash-on-Cash Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bull Case</strong> (Premium Urban)</td>
+<td>25-35%</td>
+<td>24-36 months</td>
+<td>30-50% Year 1</td>
+</tr>
+<tr>
+<td><strong>Base Case</strong> (Strong Market)</td>
+<td>15-25%</td>
+<td>34-50 months</td>
+<td>20-30% Year 1</td>
+</tr>
+<tr>
+<td><strong>Bear Case</strong> (Competitive/Suburban)</td>
+<td>8-15%</td>
+<td>50-72 months</td>
+<td>12-18% Year 1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service-model-revenue-mix-2025-trends">Service Model Revenue Mix
+(2025 Trends)</h3>
+<p><strong>Self-Service Only:</strong> - 100% coin/card-operated -
+Lowest labor, highest margin - Revenue: $200K-$350K annually</p>
+<p><strong>Hybrid Model (Recommended):</strong> - 65-75% self-service -
+15-25% wash-dry-fold - 7-10% pickup/delivery - Revenue: $400K-$750K
+annually - <strong>Pickup/delivery average order:</strong> $79.81
+(premium pricing) - <strong>Drop-off average order:</strong> $44.19</p>
+<hr />
+<h2 id="complete-risk-assessment">3. COMPLETE RISK ASSESSMENT</h2>
+<h3 id="risk-matrix-with-mitigation-strategies">Risk Matrix with
+Mitigation Strategies</h3>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 19%" />
+<col style="width: 11%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th>Risk Category</th>
+<th>Severity</th>
+<th>Probability</th>
+<th>Impact</th>
+<th>Mitigation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Utility Cost Shocks</strong></td>
+<td>High</td>
+<td>Medium</td>
+<td>3-8% margin compression</td>
+<td>Lock fixed-rate contracts; invest in high-efficiency equipment;
+pass-through pricing (90-120 day lag)</td>
+</tr>
+<tr>
+<td><strong>Equipment Failure</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>$5K-$25K unplanned expense</td>
+<td>Preventive maintenance program; IoT monitoring; equipment
+reserves</td>
+</tr>
+<tr>
+<td><strong>Competition (New Entrants)</strong></td>
+<td>Medium</td>
+<td>Low</td>
+<td>10-20% revenue erosion</td>
+<td>Differentiate with tech/service; loyalty programs; premium
+positioning</td>
+</tr>
+<tr>
+<td><strong>Suburban In-Home Washer Penetration</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>Gradual demand decline</td>
+<td>Focus on urban/high-density markets only</td>
+</tr>
+<tr>
+<td><strong>Regulatory (Water/Wastewater)</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>$10K-$50K compliance costs</td>
+<td>Pre-acquisition regulatory audit; factor into deal structure</td>
+</tr>
+<tr>
+<td><strong>Theft/Vandalism</strong></td>
+<td>Low</td>
+<td>Medium</td>
+<td>$500-$2K monthly</td>
+<td>Cashless systems (&gt;90% adoption); security cameras; remote
+monitoring</td>
+</tr>
+<tr>
+<td><strong>Labor Shortage</strong> (Full-Service)</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Service degradation</td>
+<td>Competitive wages; streamline operations; automate where
+possible</td>
+</tr>
+<tr>
+<td><strong>Economic Recession</strong></td>
+<td>Low</td>
+<td>Low</td>
+<td>5-10% revenue dip</td>
+<td>Essential service = recession-resistant; 95% customer retention</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operational-risk-details">Operational Risk Details</h3>
+<p><strong>1. Rising Utility Costs (HIGHEST PRIORITY)</strong> -
+<strong>Water/Sewer:</strong> 12-20% of sales (largest variable expense)
+- <strong>Electricity:</strong> Dryer/HVAC costs rising 3-5% annually -
+<strong>Gas:</strong> Hot water heating (if gas-fired systems) -
+<strong>Mitigation:</strong> - Negotiate utility contracts (fixed rates
+where available) - ENERGY STAR equipment (40% lower water usage by 2026
+EPA standards) - High G-force extractors (reduce drying time 20-30%) -
+Price increases lag costs by 90-120 days (plan accordingly)</p>
+<p><strong>2. Equipment Maintenance &amp; Replacement</strong> -
+<strong>Lifespan:</strong> Commercial washers/dryers last 8-14 years -
+<strong>Annual Maintenance:</strong> 2-6% of revenue -
+<strong>Replacement Cost:</strong> $1,500-$7,500 per machine (washers),
+$1,200-$5,000 (dryers) - <strong>Mitigation:</strong> - Establish
+equipment reserve fund (5% of revenue annually) - IoT-connected machines
+reduce downtime 20-30% - Service contracts with local distributors
+(faster response times)</p>
+<p><strong>3. Regulatory Compliance</strong> - <strong>Wastewater
+Regulations:</strong> Stricter limits in California, EU-standard states
+- <strong>Permitting Timeline:</strong> 90-180 days average (California:
+180+ days) - <strong>Operating Hour Restrictions:</strong> Some
+municipalities limit 24/7 operations - <strong>ADA Compliance:</strong>
+Required for public facilities - <strong>Mitigation:</strong> - Hire
+local attorney for pre-acquisition regulatory review - Budget $5K-$15K
+for compliance in offer price - Join local laundromat association
+(regulatory advocacy)</p>
+<p><strong>4. Market/Competitive Risks</strong> - <strong>New
+Construction:</strong> Apartments with in-unit washers erode suburban
+demand - <strong>Delivery Services:</strong> Venture-backed competitors
+with aggressive pricing - <strong>Mitigation:</strong> - Urban-only
+investment thesis (avoid suburban greenfield) - Differentiate:
+technology integration, loyalty programs, premium service -
+Multi-location strategy (economies of scale)</p>
+<h3 id="black-swan-events">Black Swan Events</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th>Event</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pandemic-level disruption</td>
+<td>Very Low</td>
+<td>20-40% revenue drop</td>
+<td>Essential service status (stayed open 2020-2021); delivery
+pivot</td>
+</tr>
+<tr>
+<td>Extreme weather/flooding</td>
+<td>Low</td>
+<td>$50K-$200K damage</td>
+<td>Flood insurance; elevated equipment; emergency backup power</td>
+</tr>
+<tr>
+<td>Major utility rate shock (&gt;25%)</td>
+<td>Low</td>
+<td>8-15% margin hit</td>
+<td>Immediate pricing adjustment; customer communication; efficiency
+upgrades</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="upfront-costs-breakdown">4. UPFRONT COSTS BREAKDOWN</h2>
+<h3 id="total-startup-capital-required">Total Startup Capital
+Required</h3>
+<table>
+<thead>
+<tr>
+<th>Cost Category</th>
+<th>Budget Range</th>
+<th>Percentage of Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Equipment</strong></td>
+<td>$60,000-$500,000</td>
+<td>25-40%</td>
+</tr>
+<tr>
+<td><strong>Lease/Property Purchase</strong></td>
+<td>$50,000-$1,000,000+</td>
+<td>20-50%</td>
+</tr>
+<tr>
+<td><strong>Renovations &amp; Build-Out</strong></td>
+<td>$20,000-$150,000</td>
+<td>8-20%</td>
+</tr>
+<tr>
+<td><strong>Utilities Setup</strong></td>
+<td>$10,000-$50,000</td>
+<td>4-10%</td>
+</tr>
+<tr>
+<td><strong>Technology/POS</strong></td>
+<td>$5,000-$20,000</td>
+<td>2-5%</td>
+</tr>
+<tr>
+<td><strong>Permits &amp; Licenses</strong></td>
+<td>$1,500-$10,000</td>
+<td>1-2%</td>
+</tr>
+<tr>
+<td><strong>Initial Inventory</strong></td>
+<td>$2,000-$10,000</td>
+<td>1-2%</td>
+</tr>
+<tr>
+<td><strong>Marketing/Signage</strong></td>
+<td>$2,000-$10,000</td>
+<td>1-2%</td>
+</tr>
+<tr>
+<td><strong>Working Capital Reserve</strong></td>
+<td>$15,000-$50,000</td>
+<td>6-10%</td>
+</tr>
+<tr>
+<td><strong>TOTAL INVESTMENT</strong></td>
+<td><strong>$200,000-$1,200,000</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="detailed-cost-components">Detailed Cost Components</h3>
+<h4 id="equipment-costs"><strong>Equipment Costs</strong></h4>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Machine Type</th>
+<th>Price Range (New)</th>
+<th>Price Range (Used)</th>
+<th>Qty per Store</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>20-lb Washers</strong></td>
+<td>$2,500-$4,000</td>
+<td>$1,200-$2,000</td>
+<td>15-25 units</td>
+</tr>
+<tr>
+<td><strong>30-40 lb Washers</strong></td>
+<td>$4,000-$6,500</td>
+<td>$2,000-$3,500</td>
+<td>8-15 units</td>
+</tr>
+<tr>
+<td><strong>60-80 lb Washers</strong></td>
+<td>$8,000-$20,000</td>
+<td>$4,000-$10,000</td>
+<td>2-6 units</td>
+</tr>
+<tr>
+<td><strong>Single Dryers</strong></td>
+<td>$1,500-$3,500</td>
+<td>$800-$1,800</td>
+<td>20-35 units</td>
+</tr>
+<tr>
+<td><strong>Stack Dryers</strong></td>
+<td>$3,000-$6,000</td>
+<td>$1,500-$3,000</td>
+<td>10-18 units</td>
+</tr>
+<tr>
+<td><strong>Total Equipment (Typical 2,500 sf store)</strong></td>
+<td><strong>$100,000-$300,000</strong></td>
+<td><strong>$50,000-$150,000</strong></td>
+<td>40-100 machines</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Equipment Considerations:</strong> - <strong>New
+vs. Used:</strong> New equipment = higher upfront cost, lower
+maintenance, better efficiency - <strong>Brand Comparison:</strong>
+Speed Queen/Alliance (35-40% market share), Dexter (15%),
+Electrolux/Whirlpool (8-12% each) - <strong>Lead Times:</strong> 3-6
+months for standard models (order early) - <strong>Efficiency
+ROI:</strong> ENERGY STAR models pay back 20-30% in utility savings
+annually</p>
+<h4 id="real-estate-costs"><strong>Real Estate Costs</strong></h4>
+<p><strong>Leasing (Preferred for First-Time Investors):</strong> -
+<strong>Monthly Rent:</strong> $1,500-$8,000 depending on market/size -
+<strong>Triple Net (NNN):</strong> Add $500-$2,000/month (property tax,
+insurance, CAM) - <strong>Lease Deposit:</strong> 1st month + last month
++ 1-2 months security = $6,000-$32,000 - <strong>Lease Term:</strong>
+Negotiate 7-10 years with renewal options - <strong>Rent as % of
+Revenue:</strong> Target 15-25% of gross sales</p>
+<p><strong>Purchasing (Property + Business):</strong> - <strong>Urban
+Strip Center:</strong> $300,000-$800,000 (including business) -
+<strong>Standalone Building:</strong> $400,000-$1,500,000+ (land +
+building + equipment) - <strong>Financing:</strong> SBA 7(a) loans
+available (10-20% down, 10-25 year terms)</p>
+<h4 id="renovation-build-out-costs"><strong>Renovation &amp; Build-Out
+Costs</strong></h4>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 45%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost Range</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plumbing Infrastructure</strong></td>
+<td>$15,000-$50,000</td>
+<td>Water lines, drains, gas lines (major expense)</td>
+</tr>
+<tr>
+<td><strong>Electrical Upgrades</strong></td>
+<td>$10,000-$40,000</td>
+<td>200-400 amp service, machine hookups</td>
+</tr>
+<tr>
+<td><strong>HVAC/Ventilation</strong></td>
+<td>$8,000-$25,000</td>
+<td>Proper ventilation critical for dryers</td>
+</tr>
+<tr>
+<td><strong>Flooring</strong></td>
+<td>$3,000-$10,000</td>
+<td>Commercial tile/epoxy coating</td>
+</tr>
+<tr>
+<td><strong>Interior Design</strong></td>
+<td>$5,000-$15,000</td>
+<td>Seating, decor, kids’ area, Wi-Fi</td>
+</tr>
+<tr>
+<td><strong>Exterior Signage</strong></td>
+<td>$2,000-$8,000</td>
+<td>Illuminated signs, storefront</td>
+</tr>
+<tr>
+<td><strong>Security System</strong></td>
+<td>$2,000-$8,000</td>
+<td>Cameras, alarm system, remote access</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rebates &amp; Incentives:</strong> - <strong>Utility
+Rebates:</strong> $3,000-$15,000 for energy-efficient equipment -
+<strong>SBA Microloans:</strong> Up to $50,000 for equipment/working
+capital - <strong>Local Economic Development:</strong> Some cities offer
+grants for business development</p>
+<h4 id="technology-systems"><strong>Technology &amp;
+Systems</strong></h4>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 22%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr>
+<th>System</th>
+<th>Cost</th>
+<th>ROI/Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cashless Payment System</strong></td>
+<td>$5,000-$12,000</td>
+<td>Eliminates theft; increases basket size 10-15%</td>
+</tr>
+<tr>
+<td><strong>POS Software</strong></td>
+<td>$2,000-$5,000</td>
+<td>Centralized reporting, inventory management</td>
+</tr>
+<tr>
+<td><strong>IoT Machine Monitoring</strong></td>
+<td>$3,000-$8,000</td>
+<td>Reduces downtime 20-30%; predictive maintenance</td>
+</tr>
+<tr>
+<td><strong>Customer Mobile App</strong></td>
+<td>$2,000-$10,000</td>
+<td>Machine availability alerts, loyalty programs</td>
+</tr>
+<tr>
+<td><strong>Security Cameras (8-16 cams)</strong></td>
+<td>$2,000-$6,000</td>
+<td>Remote monitoring, liability reduction</td>
+</tr>
+</tbody>
+</table>
+<h3 id="financing-options">Financing Options</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 22%" />
+<col style="width: 11%" />
+<col style="width: 24%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Financing Type</th>
+<th>Down Payment</th>
+<th>Terms</th>
+<th>Interest Rate</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SBA 7(a) Loan</strong></td>
+<td>10-20%</td>
+<td>10-25 years</td>
+<td>7-10%</td>
+<td>Business acquisition + equipment</td>
+</tr>
+<tr>
+<td><strong>Equipment Financing</strong></td>
+<td>10-25%</td>
+<td>5-7 years</td>
+<td>6-12%</td>
+<td>Equipment purchase only</td>
+</tr>
+<tr>
+<td><strong>Seller Financing</strong></td>
+<td>20-40%</td>
+<td>5-7 years</td>
+<td>5-8%</td>
+<td>Existing laundromat purchases</td>
+</tr>
+<tr>
+<td><strong>Cash Purchase</strong></td>
+<td>100%</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Best terms, fastest close</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Typical Deal Structure (Seller Financing):</strong> -
+Purchase Price: $350,000 - Down Payment: $150,000 (43%) - Seller Note:
+$200,000 @ 6% over 6 years - Monthly Payment: ~$3,300 - Must
+demonstrate: debt service coverage ratio (DSCR) &gt;1.25</p>
+<hr />
+<h2 id="active-listings-analysis-10-opportunities">5. ACTIVE LISTINGS
+ANALYSIS (10 Opportunities)</h2>
+<h3 id="listing-1-memphis-tn---multi-store-portfolio">Listing #1:
+Memphis, TN - Multi-Store Portfolio ⭐⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: A (Best-in-Class)</strong></p>
+<ul>
+<li><strong>Price:</strong> Not disclosed (contact for details)</li>
+<li><strong>Revenue:</strong> $3.3M trending (2025)</li>
+<li><strong>Cash Flow:</strong> Estimated $660K-$990K (20-30%
+EBITDA)</li>
+<li><strong>Location:</strong> 9 stores in Memphis metro</li>
+<li><strong>Equipment:</strong> Most &lt;1 year old, some 3-5 years (all
+Dexter)</li>
+<li><strong>Operations:</strong> 5 hourly employees + owner (potential
+for absentee ownership)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Scale efficiencies across 9 locations</li>
+<li>Modern equipment = low maintenance</li>
+<li>Verified sales via armored car service</li>
+<li>Turnkey operation</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>High acquisition cost (likely $2M-$5M based on multiples)</li>
+<li>Memphis market demographics (median income $54,000)</li>
+<li>Multi-store management complexity</li>
+</ul></li>
+<li><strong>Valuation:</strong> $1.98M-$4.75M (3-5x SDE assuming 30%
+margins)</li>
+<li><strong>ROI Projection:</strong> 18-25% IRR with professional
+management</li>
+<li><strong>Contact:</strong> Josh, (901) 651-6072,
+joshuatate101@gmail.com</li>
+</ul>
+<hr />
+<h3 id="listing-2-st.-petersburg-fl">Listing #2: St. Petersburg, FL
+⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: A- (Strong Buy)</strong></p>
+<ul>
+<li><strong>Price:</strong> $350,000</li>
+<li><strong>Down Payment:</strong> $150,000</li>
+<li><strong>Revenue:</strong> $215,000 gross annually</li>
+<li><strong>Cash Flow:</strong> $105,000 (48.8% margin -
+excellent!)</li>
+<li><strong>Size:</strong> 2,000 sq ft</li>
+<li><strong>Location:</strong> Stand-alone building with high
+visibility, ample parking</li>
+<li><strong>Equipment:</strong> Not specified (request age in due
+diligence)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>High cash flow margin (above industry average)</li>
+<li>Standalone building = less neighbor risk</li>
+<li>Established customer base</li>
+<li>Strong demographics in St. Pete (60% renters, growing market)</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Florida hurricane exposure (verify insurance costs)</li>
+<li>Equipment age unknown (could face replacement soon)</li>
+</ul></li>
+<li><strong>Valuation:</strong> Priced at 3.33x cash flow (fair market
+value)</li>
+<li><strong>ROI Projection:</strong>
+<ul>
+<li>Cash-on-cash return: 30% ($105K / $350K)</li>
+<li>Payback: 3.3 years on full price, 1.4 years on down payment</li>
+<li>IRR: 25-30% (assuming stable cash flow)</li>
+</ul></li>
+<li><strong>Contact:</strong> Visit
+lbrokers.com/st-petersburg-laundry-for-sale</li>
+</ul>
+<hr />
+<h3 id="listing-3-compton-ca">Listing #3: Compton, CA ⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B+ (Good Value)</strong></p>
+<ul>
+<li><strong>Price:</strong> Not disclosed</li>
+<li><strong>Revenue:</strong> Not disclosed (request in due
+diligence)</li>
+<li><strong>Size:</strong> 2,748 sq ft (+ 218 sq ft utility/plumbing
+room)</li>
+<li><strong>Equipment:</strong> 26 dryers + 33 washers (card &amp; coin
+operated)</li>
+<li><strong>Built:</strong> 2012 (13 years old - equipment likely needs
+refresh)</li>
+<li><strong>Location:</strong> W. Rancho Dominguez district,
+high-traffic residential area</li>
+<li><strong>Features:</strong>
+<ul>
+<li>New card reader system</li>
+<li>Surround sound speakers + flat screen TVs</li>
+<li>High-quality plumbing system</li>
+</ul></li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Near Compton Civic Center (foot traffic)</li>
+<li>High rental density (72% of Compton households rent)</li>
+<li>Well-equipped modern amenities</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Compton demographics (median income $43,000 - lower end)</li>
+<li>Equipment age (2012 build = machines likely 10-13 years old)</li>
+<li>California water costs + regulatory environment</li>
+</ul></li>
+<li><strong>Valuation:</strong> Likely $400K-$650K based on
+size/location</li>
+<li><strong>ROI Projection:</strong> 12-18% IRR (equipment refresh
+needed)</li>
+<li><strong>Contact:</strong> Judith Gallardo, (714) 310-7757,
+jgallardo@America1StRealty.com</li>
+</ul>
+<hr />
+<h3 id="listing-4-harper-kansas">Listing #4: Harper, Kansas
+⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B+ (Unique Opportunity)</strong></p>
+<ul>
+<li><strong>Price:</strong> $140,000 (negotiable, cash preferred)</li>
+<li><strong>Revenue:</strong> $5,200-$5,500 monthly ($62,400-$66,000
+annually)</li>
+<li><strong>Expenses:</strong> ~$1,325/mo utilities + $725/mo rent/taxes
+= $24,600/yr</li>
+<li><strong>Cash Flow:</strong> ~$38,000-$41,000 annually (60-65%
+margin!)</li>
+<li><strong>Lease:</strong> 8.5 years remaining ($600/mo + $125 taxes,
+caps at $1,000)</li>
+<li><strong>Equipment:</strong> Older Speed Queen (easy to repair)</li>
+<li><strong>Location:</strong> ONLY laundromat within 25 miles
+(monopoly!)</li>
+<li><strong>Operations:</strong> 24/7 operation, coin-only</li>
+<li><strong>Services:</strong> Minimal WDF (untapped growth
+potential)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Zero competition in 25-mile radius</li>
+<li>Exceptional cash flow margin</li>
+<li>Low rent with long-term lease</li>
+<li>Established, loyal customer base</li>
+<li>Owner distracted by other business (room for improvement)</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Rural Kansas (small population = limited growth)</li>
+<li>Older equipment (maintenance/replacement risk)</li>
+<li>Coin-only (tech upgrade needed for growth)</li>
+<li>Owner time commitment (not passive)</li>
+</ul></li>
+<li><strong>Valuation:</strong> $140K = 3.4-3.7x cash flow (fair
+value)</li>
+<li><strong>ROI Projection:</strong>
+<ul>
+<li>Cash-on-cash: 27-29% annually</li>
+<li>Payback: 3.4-3.7 years</li>
+<li>Upside: Add WDF service, upgrade to cashless = +$15K revenue
+potential</li>
+<li>IRR: 20-25% with operational improvements</li>
+</ul></li>
+<li><strong>Contact:</strong> johnandpampatterson@gmail.com</li>
+</ul>
+<hr />
+<h3 id="listing-5-manteca-ca">Listing #5: Manteca, CA ⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B (Value Play)</strong></p>
+<ul>
+<li><strong>Price:</strong> $500K (or best offer - motivated
+seller!)</li>
+<li><strong>Revenue:</strong> Not disclosed (“VERY well” - request
+P&amp;L)</li>
+<li><strong>Location:</strong> Manteca, CA (Central Valley, affordable
+housing market)</li>
+<li><strong>Equipment:</strong> 32 washers (various sizes) + 37 dryers
+(various sizes)</li>
+<li><strong>Operations:</strong> All coin-operated, established
+business</li>
+<li><strong>Condition:</strong> “Needs some work but nothing major”</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Motivated seller (health issues = negotiation leverage)</li>
+<li>Manteca demographics (60% renters, growing immigrant
+population)</li>
+<li>“Never been in the negative” = profitable history</li>
+<li>Room for improvement (WDF, delivery, cashless upgrades)</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Deferred maintenance (needs work)</li>
+<li>Coin-only = theft risk</li>
+<li>NDA required (seller protecting info = could hide issues)</li>
+<li>Central Valley water costs (higher than Bay Area coastal)</li>
+</ul></li>
+<li><strong>Valuation:</strong> $500K asking (likely overpriced if cash
+flow &lt;$125K)</li>
+<li><strong>Negotiation Strategy:</strong>
+<ul>
+<li>Request 3 years tax returns + P&amp;L</li>
+<li>Verify equipment age/condition (inspection critical)</li>
+<li>Offer $350K-$400K based on actual cash flow</li>
+<li>Factor $25K-$50K for deferred maintenance</li>
+</ul></li>
+<li><strong>ROI Projection:</strong> 10-18% IRR (depends on actual cash
+flow + renovation)</li>
+<li><strong>Contact:</strong> Jim Anderson, spuncop1@gmail.com</li>
+</ul>
+<hr />
+<h3 id="listing-6-cheyenne-wy">Listing #6: Cheyenne, WY ⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B+ (Solid Opportunity)</strong></p>
+<ul>
+<li><strong>Price:</strong> Not disclosed (request from realtor)</li>
+<li><strong>Revenue:</strong> Not disclosed</li>
+<li><strong>History:</strong> In business 70 years! (established
+brand)</li>
+<li><strong>Equipment:</strong> 42 washers + 26 dryers + laundry
+equipment</li>
+<li><strong>Size:</strong> 720 sq ft retail space (currently salon with
+separate entrance)</li>
+<li><strong>Services:</strong> Strong drop-off laundry clientele</li>
+<li><strong>Location:</strong> 900 W. Lincolnway (part of West Edge
+Project development)</li>
+<li><strong>Updates:</strong> Many updates in last 18 months</li>
+<li><strong>Property:</strong> Lot included in sale (HUGE VALUE!)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>70-year brand equity (generational customer loyalty)</li>
+<li>Real estate included (hedge against inflation)</li>
+<li>West Edge Project = rising area value</li>
+<li>Additional revenue from retail space (salon tenant or convert)</li>
+<li>Recent updates = lower immediate CapEx</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Cheyenne population 64,000 (small market)</li>
+<li>Equipment age unknown (70 years in business = could be old
+machines)</li>
+<li>Wyoming winters (snow removal, heating costs)</li>
+<li>“Sold as-is” = buyer beware</li>
+</ul></li>
+<li><strong>Valuation:</strong> Likely $600K-$900K (real estate +
+business)</li>
+<li><strong>ROI Projection:</strong> 12-18% IRR (real estate value adds
+stability)</li>
+<li><strong>Contact:</strong> Paula, (307) 331-7285,
+paula@sellcheyenne.com</li>
+</ul>
+<hr />
+<h3 id="listing-7-inland-empirepomona-ca">Listing #7: Inland
+Empire/Pomona, CA ⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: C+ (Lease Takeover)</strong></p>
+<ul>
+<li><strong>Price:</strong> Lease takeover (no business sale price
+disclosed)</li>
+<li><strong>Revenue:</strong> Not disclosed</li>
+<li><strong>History:</strong> 10+ years in operation</li>
+<li><strong>Size:</strong> 3,173 sq ft</li>
+<li><strong>Location:</strong> Close to freeway + residential
+neighborhoods</li>
+<li><strong>Condition:</strong> “Owner passed away” (estate sale -
+potential distress)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Established location (10+ years = loyal customers)</li>
+<li>Inland Empire demographics (70% renters, affordable housing
+boom)</li>
+<li>Pomona population 150,000+ (critical mass)</li>
+<li>Lease takeover = lower upfront cost</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>No business value disclosed (could be unprofitable)</li>
+<li>“Good credit required” = lease may have unfavorable terms</li>
+<li>Owner deceased = no seller financing, limited transition
+support</li>
+<li>Equipment ownership unclear (lease or owned?)</li>
+</ul></li>
+<li><strong>Due Diligence Required:</strong>
+<ul>
+<li>Request lease terms (rent, length, escalations)</li>
+<li>Verify equipment ownership (included or separate purchase?)</li>
+<li>Review 2-3 years financials (estate should provide)</li>
+<li>Inspect equipment condition</li>
+</ul></li>
+<li><strong>Valuation:</strong> Cannot assess without financials</li>
+<li><strong>ROI Projection:</strong> Unknown (pass without full
+disclosure)</li>
+<li><strong>Contact:</strong> (714) 726-1029,
+lauraleemurphy@outlook.com</li>
+</ul>
+<hr />
+<h3 id="listing-8-cabot-ar">Listing #8: Cabot, AR ⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B+ (Fair Value)</strong></p>
+<ul>
+<li><strong>Price:</strong> $195,000</li>
+<li><strong>Revenue:</strong> Not disclosed</li>
+<li><strong>History:</strong> 20 years in current location</li>
+<li><strong>Size:</strong> ~3,000 sq ft</li>
+<li><strong>Location:</strong> 100 N. 1st St., Cabot, AR</li>
+<li><strong>Equipment:</strong> Most machines replaced in last 3 years
+(EXCELLENT!)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Recent equipment upgrade = low maintenance for 8-12 years</li>
+<li>20-year established location (brand equity)</li>
+<li>Cabot demographics (suburb of Little Rock, 40% renters)</li>
+<li>Fair asking price for turnkey operation</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Revenue not disclosed (red flag - request immediately)</li>
+<li>Cabot population 26,000 (small market)</li>
+<li>Suburban location (in-home washer competition)</li>
+</ul></li>
+<li><strong>Valuation:</strong> $195K likely = 3-4x cash flow (need
+revenue to confirm)</li>
+<li><strong>ROI Projection:</strong>
+<ul>
+<li>If $50K cash flow: 25% return (excellent)</li>
+<li>If $60K cash flow: 30% return (best-in-class)</li>
+<li>Payback: 3.25-3.9 years</li>
+</ul></li>
+<li><strong>Contact:</strong> Tom Nolting, (501) 606-3731,
+t7knolting@yahoo.com</li>
+</ul>
+<hr />
+<h3 id="listing-9-fort-wortheuless-tx">Listing #9: Fort Worth/Euless, TX
+⭐⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B+ (Stable Cash Cow)</strong></p>
+<ul>
+<li><strong>Price:</strong> $350,000</li>
+<li><strong>Revenue:</strong> “Stable for years” (request
+specifics)</li>
+<li><strong>Location:</strong> Euless, TX 76040</li>
+<li><strong>Condition:</strong> “Well-established, well-maintained”</li>
+<li><strong>Equipment:</strong> Most purchased 2015 (10 years old -
+mid-life)</li>
+<li><strong>Operations:</strong> “Cash cow” (seller retiring, moving out
+of state)</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Dallas-Fort Worth metro (1.5M+ renters)</li>
+<li>“Staple in the community” = loyal customer base</li>
+<li>Owner retiring (not forced sale = honest disclosure likely)</li>
+<li>Stable revenue history</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Equipment 10 years old (5-8 years of life remaining)</li>
+<li>NDA required for financials (seller protecting privacy)</li>
+<li>Revenue not disclosed (must verify cash flow)</li>
+<li>Serious buyers only (seller screening = could delay process)</li>
+</ul></li>
+<li><strong>Valuation:</strong> $350K = needs $87K+ cash flow to justify
+(4x multiple)</li>
+<li><strong>ROI Projection:</strong> 18-25% IRR if cash flow is
+$87K-$105K</li>
+<li><strong>Contact:</strong> Jevon White, (214) 974-2318,
+jevonwhitelaundry@gmail.com</li>
+</ul>
+<hr />
+<h3 id="listing-10-wellington-ks---multi-asset">Listing #10: Wellington,
+KS - Multi-Asset ⭐⭐⭐</h3>
+<p><strong>INVESTMENT GRADE: B- (Diversified, Complex)</strong></p>
+<ul>
+<li><strong>Price:</strong> $1,850,000</li>
+<li><strong>Assets:</strong> 2 car wash locations + mini storage (39
+units, 100% occupied) + laundromat</li>
+<li><strong>Location:</strong> 405 W 15th St &amp; 527 E 16th St,
+Wellington, KS</li>
+<li><strong>Condition:</strong> “Very well maintained and updated”</li>
+<li><strong>Recent Updates:</strong> New automatic car wash (2019), new
+laundromat roof</li>
+<li><strong>Competition:</strong> “Little to no local market
+competition”</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Diversified income streams (recession-resistant portfolio)</li>
+<li>100% occupancy on storage (immediate cash flow)</li>
+<li>Recent CapEx (car wash, roof) = lower maintenance</li>
+<li>Small-town monopoly (limited competition)</li>
+</ul></li>
+<li><strong>Risks:</strong>
+<ul>
+<li>Wellington population 7,700 (very small market)</li>
+<li>Complex multi-asset management (car wash + storage +
+laundromat)</li>
+<li>High acquisition cost for small-town assets</li>
+<li>Revenue split not disclosed (how much is laundromat vs. other
+assets?)</li>
+</ul></li>
+<li><strong>Valuation:</strong> Cannot assess laundromat alone (bundled
+deal)</li>
+<li><strong>ROI Projection:</strong>
+<ul>
+<li>Need revenue breakdown by asset</li>
+<li>Likely 8-12% IRR on total portfolio (diversification discount)</li>
+<li>Best for operator seeking lifestyle business in small town</li>
+</ul></li>
+<li><strong>Contact:</strong> Kevin Howell, (316) 292-3971,
+khowell@weigand.com</li>
+</ul>
+<hr />
+<h2 id="investment-quality-ranking">6. INVESTMENT QUALITY RANKING</h2>
+<h3 id="top-3-recommendations-for-immediate-action">Top 3
+Recommendations for Immediate Action</h3>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 18%" />
+<col style="width: 8%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Listing</th>
+<th>Location</th>
+<th>Price</th>
+<th>Cash Flow</th>
+<th>ROI</th>
+<th>Why It’s #1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🥇 <strong>1</strong></td>
+<td>St. Petersburg, FL</td>
+<td>St. Petersburg, FL</td>
+<td>$350K</td>
+<td>$105K</td>
+<td>30%</td>
+<td>Best risk-adjusted return; transparent financials; strong market;
+fair valuation</td>
+</tr>
+<tr>
+<td>🥈 <strong>2</strong></td>
+<td>Harper, KS</td>
+<td>Harper, KS</td>
+<td>$140K</td>
+<td>$40K</td>
+<td>27%</td>
+<td>Monopoly market; negotiable price; huge upside with WDF + cashless
+upgrades</td>
+</tr>
+<tr>
+<td>🥉 <strong>3</strong></td>
+<td>Memphis Portfolio</td>
+<td>Memphis, TN</td>
+<td>$2M-$5M</td>
+<td>$660K-$990K</td>
+<td>20-25%</td>
+<td>Scale play; modern equipment; absentee-ready;
+institutional-grade</td>
+</tr>
+</tbody>
+</table>
+<h3 id="investment-strategy-by-buyer-profile">Investment Strategy by
+Buyer Profile</h3>
+<p><strong>🔰 First-Time Buyer ($150K-$400K budget):</strong> 1.
+<strong>St. Petersburg, FL</strong> - Turnkey, transparent, strong
+market 2. <strong>Cabot, AR</strong> - Low price, new equipment, simple
+operation 3. <strong>Harper, KS</strong> - Monopoly, low risk, room for
+improvement</p>
+<p><strong>💼 Experienced Operator ($400K-$1M budget):</strong> 1.
+<strong>Fort Worth/Euless, TX</strong> - DFW market, stable cash flow,
+mid-size 2. <strong>Cheyenne, WY</strong> - Real estate included,
+additional revenue (salon) 3. <strong>Manteca, CA</strong> - Negotiation
+opportunity, upside potential</p>
+<p><strong>🏢 Multi-Store Investor ($1M+ budget):</strong> 1.
+<strong>Memphis Portfolio</strong> - 9 stores, scale efficiencies,
+absentee model 2. <strong>Combination:</strong> St. Petersburg + Cabot +
+Harper = 3-store regional portfolio</p>
+<hr />
+<h2 id="due-diligence-checklist">7. DUE DILIGENCE CHECKLIST</h2>
+<p>Before making an offer, complete the following for each target:</p>
+<h3 id="financial-verification">Financial Verification ✅</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />3 years tax returns (verify actual
+revenue, not “stated”)</label></li>
+<li><label><input type="checkbox" />12 months P&amp;L statements
+(monthly breakdown)</label></li>
+<li><label><input type="checkbox" />Bank statements (verify deposits
+match stated revenue)</label></li>
+<li><label><input type="checkbox" />Utility bills (verify costs,
+identify efficiency opportunities)</label></li>
+<li><label><input type="checkbox" />Lease agreement (verify rent, terms,
+renewal options, assignment clause)</label></li>
+<li><label><input type="checkbox" />Equipment purchase receipts (verify
+age, warranty status)</label></li>
+</ul>
+<h3 id="physical-inspection">Physical Inspection ✅</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Professional equipment inspection
+(hire laundry technician)</label></li>
+<li><label><input type="checkbox" />Building inspection (roof, plumbing,
+electrical, HVAC)</label></li>
+<li><label><input type="checkbox" />Equipment age verification (serial
+numbers → manufacturer date codes)</label></li>
+<li><label><input type="checkbox" />Test all machines (operate 5-10
+cycles to verify functionality)</label></li>
+<li><label><input type="checkbox" />Water pressure test (low pressure =
+slow fills = customer complaints)</label></li>
+<li><label><input type="checkbox" />Drainage inspection (slow drains =
+major repair expense)</label></li>
+</ul>
+<h3 id="market-analysis">Market Analysis ✅</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Competitive radius survey (visit all
+competitors within 1 mile)</label></li>
+<li><label><input type="checkbox" />Census data review (verify rental %,
+median income, density)</label></li>
+<li><label><input type="checkbox" />Traffic count (visit site 3x:
+weekday morning, weekday evening, weekend)</label></li>
+<li><label><input type="checkbox" />Customer interviews (talk to 10-15
+customers during visit)</label></li>
+<li><label><input type="checkbox" />Online reputation check (Google
+reviews, Yelp, Facebook)</label></li>
+</ul>
+<h3 id="legalregulatory">Legal/Regulatory ✅</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Zoning verification (confirm
+laundromat use is permitted)</label></li>
+<li><label><input type="checkbox" />Environmental compliance (water
+discharge permits, wastewater)</label></li>
+<li><label><input type="checkbox" />ADA compliance audit (identify
+required upgrades)</label></li>
+<li><label><input type="checkbox" />Business license transfer process
+(verify city/county requirements)</label></li>
+<li><label><input type="checkbox" />Lease assignment approval (landlord
+must approve new tenant)</label></li>
+<li><label><input type="checkbox" />Outstanding liens search (title
+company or attorney)</label></li>
+</ul>
+<h3 id="seller-verification">Seller Verification ✅</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Reason for selling (retirement,
+health, or red flag?)</label></li>
+<li><label><input type="checkbox" />Ownership length (2+ years preferred
+for accurate performance data)</label></li>
+<li><label><input type="checkbox" />Transition support (will seller
+train for 30-60 days?)</label></li>
+<li><label><input type="checkbox" />Non-compete agreement (5-10 mile
+radius, 3-5 years)</label></li>
+<li><label><input type="checkbox" />Equipment warranties (transferable
+to new owner?)</label></li>
+</ul>
+<hr />
+<h2 id="contact-sheet-for-follow-up">8. CONTACT SHEET FOR FOLLOW-UP</h2>
+<h3 id="priority-1-contacts-call-this-week">Priority 1 Contacts (Call
+This Week)</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Business</th>
+<th>Contact Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Best Time to Call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>St. Petersburg, FL</strong></td>
+<td>Visit website</td>
+<td>N/A</td>
+<td>Via lbrokers.com</td>
+<td>M-F 9am-5pm EST</td>
+</tr>
+<tr>
+<td><strong>Harper, KS</strong></td>
+<td>John or Pam Patterson</td>
+<td>N/A</td>
+<td>johnandpampatterson@gmail.com</td>
+<td>Anytime (email first)</td>
+</tr>
+<tr>
+<td><strong>Memphis Portfolio</strong></td>
+<td>Josh</td>
+<td>(901) 651-6072</td>
+<td>joshuatate101@gmail.com</td>
+<td>M-F 9am-6pm CST</td>
+</tr>
+</tbody>
+</table>
+<h3 id="priority-2-contacts-call-after-initial-review">Priority 2
+Contacts (Call After Initial Review)</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 24%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Business</th>
+<th>Contact Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Best Time to Call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fort Worth/Euless, TX</strong></td>
+<td>Jevon White</td>
+<td>(214) 974-2318</td>
+<td>jevonwhitelaundry@gmail.com</td>
+<td>M-F 10am-5pm CST</td>
+</tr>
+<tr>
+<td><strong>Cabot, AR</strong></td>
+<td>Tom Nolting</td>
+<td>(501) 606-3731</td>
+<td>t7knolting@yahoo.com</td>
+<td>M-F 9am-6pm CST</td>
+</tr>
+<tr>
+<td><strong>Cheyenne, WY</strong></td>
+<td>Paula (Realtor)</td>
+<td>(307) 331-7285</td>
+<td>paula@sellcheyenne.com</td>
+<td>M-F 9am-5pm MST</td>
+</tr>
+</tbody>
+</table>
+<h3 id="priority-3-contacts-research-further-before-contact">Priority 3
+Contacts (Research Further Before Contact)</h3>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 31%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th>Business</th>
+<th>Contact Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compton, CA</strong></td>
+<td>Judith Gallardo</td>
+<td>(714) 310-7757</td>
+<td>jgallardo@America1StRealty.com</td>
+<td>Request price + financials first</td>
+</tr>
+<tr>
+<td><strong>Manteca, CA</strong></td>
+<td>Jim Anderson</td>
+<td>N/A</td>
+<td>spuncop1@gmail.com</td>
+<td>Motivated seller - negotiate hard</td>
+</tr>
+<tr>
+<td><strong>Pomona, CA (Lease)</strong></td>
+<td>N/A</td>
+<td>(714) 726-1029</td>
+<td>lauraleemurphy@outlook.com</td>
+<td>Need lease terms + financials</td>
+</tr>
+<tr>
+<td><strong>Wellington, KS</strong></td>
+<td>Kevin Howell</td>
+<td>(316) 292-3971</td>
+<td>khowell@weigand.com</td>
+<td>Multi-asset - complex deal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="additional-listing-platforms">Additional Listing Platforms</h3>
+<ul>
+<li><strong>BizBuySell:</strong> 363 laundromats listed (requires
+account to view details)</li>
+<li><strong>BizQuest:</strong> 388 laundromats listed (browse at
+bizquest.com)</li>
+<li><strong>LoopNet:</strong> Commercial real estate + businesses
+(filter for laundromats)</li>
+<li><strong>Laundromat Brokers:</strong> Specialized brokers (see
+LaundryBizCenter directory)</li>
+</ul>
+<hr />
+<h2 id="financing-pre-approval-strategy">9. FINANCING PRE-APPROVAL
+STRATEGY</h2>
+<h3 id="recommended-lenders">Recommended Lenders</h3>
+<p><strong>SBA 7(a) Lenders (Best for Acquisition):</strong> -
+<strong>Live Oak Bank</strong> - Laundromat specialists, 10% down, up to
+$5M - <strong>Huntington Bank</strong> - SBA preferred lender, fast
+approval - <strong>TD Bank</strong> - Strong small business lending,
+local branches</p>
+<p><strong>Equipment Financing:</strong> - <strong>Alliance Laundry
+Systems</strong> - Manufacturer financing, 6-8% rates - <strong>Girbaud
+Distribution</strong> - Speed Queen distributor, flexible terms -
+<strong>Eastern Funding</strong> - Equipment-only loans, 10% down</p>
+<p><strong>Local Community Banks:</strong> - Often better terms for
+local buyers - Visit 3-5 banks in target market - Bring business plan +
+personal financials</p>
+<h3 id="documents-needed-for-pre-approval">Documents Needed for
+Pre-Approval</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Personal credit report (720+ score
+preferred)</label></li>
+<li><label><input type="checkbox" />2 years personal tax
+returns</label></li>
+<li><label><input type="checkbox" />Personal financial statement (assets
+&amp; liabilities)</label></li>
+<li><label><input type="checkbox" />Resume/business experience
+summary</label></li>
+<li><label><input type="checkbox" />Business plan (use this report as
+foundation)</label></li>
+<li><label><input type="checkbox" />Target property details (listing
+info, photos, financials)</label></li>
+<li><label><input type="checkbox" />Down payment verification (bank
+statements showing liquid funds)</label></li>
+</ul>
+<hr />
+<h2 id="next-steps-action-plan">10. NEXT STEPS &amp; ACTION PLAN</h2>
+<h3 id="week-1-actions-immediate">Week 1 Actions (Immediate)</h3>
+<p><strong>Day 1-2:</strong> - [ ] Call St. Petersburg, FL listing
+(Priority #1) - [ ] Email Harper, KS sellers (Priority #2) - [ ] Request
+financials from Memphis portfolio (Priority #3)</p>
+<p><strong>Day 3-4:</strong> - [ ] Apply for SBA loan pre-approval (Live
+Oak Bank recommended) - [ ] Schedule site visits to top 3 targets - [ ]
+Hire local laundromat broker for market guidance</p>
+<p><strong>Day 5-7:</strong> - [ ] Create spreadsheet comparing all
+listings - [ ] Negotiate prices on 2-3 finalists - [ ] Draft Letter of
+Intent (LOI) for best opportunity</p>
+<h3 id="week-2-4-due-diligence-phase">Week 2-4: Due Diligence Phase</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Execute NDAs with
+sellers</label></li>
+<li><label><input type="checkbox" />Review financials (tax returns,
+P&amp;L, bank statements)</label></li>
+<li><label><input type="checkbox" />Conduct site inspections (equipment,
+building, market)</label></li>
+<li><label><input type="checkbox" />Hire attorney for purchase agreement
+review</label></li>
+<li><label><input type="checkbox" />Finalize financing (loan commitment
+letter)</label></li>
+</ul>
+<h3 id="week-5-8-closing-phase">Week 5-8: Closing Phase</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Negotiate final purchase
+price</label></li>
+<li><label><input type="checkbox" />Execute purchase
+agreement</label></li>
+<li><label><input type="checkbox" />Complete inspections and contingency
+removals</label></li>
+<li><label><input type="checkbox" />Secure insurance (liability,
+property, business interruption)</label></li>
+<li><label><input type="checkbox" />Close transaction and take
+possession</label></li>
+<li><label><input type="checkbox" />Begin owner training/transition
+period</label></li>
+</ul>
+<hr />
+<h2 id="appendix-a-industry-data-sources">APPENDIX A: INDUSTRY DATA
+SOURCES</h2>
+<p>All data in this report sourced from:</p>
+<ol type="1">
+<li><strong>Press Cleaners</strong> - Laundromat Statistics 2025
+(October 2025)</li>
+<li><strong>Dojo Business</strong> - Laundromat Industry Market
+Statistics (October 2025)</li>
+<li><strong>The Laundry Boss</strong> - U.S. Laundromat Demographics
+&amp; Industry Overview (September 2025)</li>
+<li><strong>IBISWorld</strong> - Laundromats in the US Industry Analysis
+2025</li>
+<li><strong>Arrowfish Consulting</strong> - Laundromat Valuation Guide
+(September 2025)</li>
+<li><strong>Laundry Biz Center</strong> - Active Listings (December
+2025-February 2026)</li>
+<li><strong>BizBuySell</strong> - Laundromat Valuation Multiples &amp;
+Benchmarks</li>
+<li><strong>Trycents</strong> - Into the Fold 2025 Report (Industry
+Financial Benchmarks)</li>
+<li><strong>Multiple Rental Market Reports</strong> - Phoenix, Houston,
+Dallas, Atlanta demographics (2025)</li>
+</ol>
+<hr />
+<h2 id="appendix-b-valuation-calculator">APPENDIX B: VALUATION
+CALCULATOR</h2>
+<p>Use this formula to quickly assess any listing:</p>
+<p><strong>Step 1: Calculate SDE (Seller’s Discretionary
+Earnings)</strong></p>
+<pre><code>SDE = Net Income + Owner Salary + Interest + Depreciation + One-Time Expenses</code></pre>
+<p><strong>Step 2: Apply Appropriate Multiple</strong> - New equipment
+(0-5 years): 4.5-5.5x SDE - Mid-age equipment (6-12 years): 4.0-4.5x SDE
+- Older equipment (13-16 years): 3.5-4.0x SDE - Old equipment (17+
+years): 2.5-3.5x SDE (factor in replacement costs)</p>
+<p><strong>Step 3: Adjust for Market Factors</strong> - <strong>Add
+10-20%:</strong> Premium urban market (NYC, LA, SF, Chicago) -
+<strong>Add 5-10%:</strong> Strong growth market (Phoenix, Atlanta,
+Dallas, Houston) - <strong>No adjustment:</strong> Stable market (small
+cities, established suburban) - <strong>Subtract 10-20%:</strong>
+Declining market (rural, high home ownership)</p>
+<p><strong>Step 4: Factor in Additional Assets</strong> - Real estate:
+Add appraised land/building value - Inventory: Add current inventory at
+cost - Accounts receivable: Add collectible AR (commercial WDF
+clients)</p>
+<p><strong>Example Calculation:</strong> - Annual Revenue: $250,000 -
+Operating Expenses: $125,000 - Owner Draws: $75,000 - Net Income:
+$50,000 - SDE = $50,000 + $75,000 = $125,000 - Equipment Age: 8 years =
+4.25x multiple - Base Value: $125,000 x 4.25 = $531,250 - Market:
+Phoenix (growing) = +7.5% - <strong>Fair Market Value:
+$571,094</strong></p>
+<hr />
+<h2 id="conclusion">CONCLUSION</h2>
+<p>The laundromat industry offers exceptional investment potential for
+entrepreneurs seeking stable, cash-flowing businesses with strong
+recession resistance. Key takeaways:</p>
+<p>✅ <strong>Industry Strength:</strong> 95% success rate, 20-35%
+margins, $6.8B market<br />
+✅ <strong>Best Markets:</strong> Phoenix, Houston, Atlanta, Dallas, Los
+Angeles (high rental density)<br />
+✅ <strong>Valuation:</strong> 3-5x SDE/cash flow typical, equipment age
+is critical factor<br />
+✅ <strong>ROI Expectations:</strong> 15-30% IRR with 34-50 month
+payback in base case<br />
+✅ <strong>Top Opportunities:</strong> St. Petersburg FL, Harper KS,
+Memphis portfolio stand out<br />
+✅ <strong>Risk Management:</strong> Focus on urban markets, modern
+equipment, utility cost controls<br />
+✅ <strong>Action Plan:</strong> Contact top 3 listings this week,
+secure SBA pre-approval, conduct due diligence</p>
+<p><strong>Recommended Initial Investment:</strong> St. Petersburg, FL
+listing ($350K asking, $105K cash flow, 30% ROI) represents the best
+risk-adjusted opportunity for immediate action.</p>
+<hr />
+<p><strong>Report prepared using comprehensive web research &amp; active
+listing analysis</strong><br />
+<strong>Next Report:</strong> Week 2 (February 12, 2026) - Market
+updates &amp; new listings review</p>
+</body>
+</html>

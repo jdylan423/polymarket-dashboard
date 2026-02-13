@@ -1,0 +1,21 @@
+{
+  "name": "laundromat-deal-pipeline",
+  "version": "1.0.0",
+  "description": "Automated tracker for laundromat business listings across multiple platforms",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/index.js --scrape",
+    "export": "node src/index.js --export",
+    "init-db": "node src/database.js --init"
+  },
+  "keywords": ["laundromat", "deal-pipeline", "scraper"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "better-sqlite3": "^9.2.0",
+    "commander": "^11.1.0"
+  }
+}

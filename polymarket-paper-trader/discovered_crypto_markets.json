@@ -1,0 +1,21 @@
+[
+  {
+    "id": "558941",
+    "question": "Will Netherlands win the 2026 FIFA World Cup?",
+    "slug": "will-netherlands-win-the-2026-fifa-world-cup-739",
+    "active": true,
+    "closed": false,
+    "endDate": "2026-07-20T00:00:00Z",
+    "outcomes": [
+      "Yes",
+      "No"
+    ],
+    "outcomePrices": [
+      "0.033",
+      "0.967"
+    ],
+    "liquidity": 240529.65028,
+    "volume24hr": 62247.60320399999,
+    "conditionId": "0x9be56371f6a29d12769b2f196847ee825b9585ebb8bfa042136be031b081eba1"
+  }
+]

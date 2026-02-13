@@ -1,0 +1,60 @@
+{
+  "name": "solana-momentum-trading-bot",
+  "version": "1.0.0",
+  "description": "Autonomous momentum trading bot for Solana DEX tokens",
+  "main": "src/daemon.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/daemon.js",
+    "start:legacy": "node src/bot.js",
+    "start:old-daemon": "node src/bot-daemon.js",
+    "dev": "node --watch src/daemon.js",
+    "test": "node src/test.js",
+    "logs": "tail -f logs/trading.log",
+    "logs:all": "tail -f logs/*.log",
+    "logs:trades": "tail -f logs/trades.log",
+    "logs:errors": "tail -f logs/error.log",
+    "logs:heartbeat": "tail -f logs/heartbeat.log",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:logs": "pm2 logs solana-trading-bot",
+    "pm2:stop": "pm2 stop solana-trading-bot",
+    "pm2:restart": "pm2 restart solana-trading-bot",
+    "pm2:delete": "pm2 delete solana-trading-bot",
+    "state:view": "cat state/bot-state.json | jq . || echo 'No state file found'",
+    "heartbeat:view": "cat state/heartbeat.json | jq . || echo 'No heartbeat file found'",
+    "metrics:view": "cat state/metrics.json | jq . || echo 'No metrics file found'",
+    "backups:list": "ls -lht state/backups/",
+    "docker:build": "docker build -t solana-trading-bot:latest -f docker/Dockerfile .",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up -d",
+    "docker:logs": "docker-compose -f docker/docker-compose.yml logs -f",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down",
+    "dashboard": "node src/dashboard.js",
+    "dev:backend": "node src/dashboard.js",
+    "dev:frontend": "cd web && npm install && npm run dev",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "build:frontend": "cd web && npm install && npm run build",
+    "start:dashboard": "node src/dashboard.js",
+    "web:dev": "cd web && npm install && npm run dev",
+    "web:build": "cd web && npm install && npm run build"
+  },
+  "keywords": [
+    "solana",
+    "trading",
+    "dex",
+    "jupiter",
+    "momentum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@solana/spl-token": "^0.4.8",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "winston": "^3.13.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0"
+  }
+}

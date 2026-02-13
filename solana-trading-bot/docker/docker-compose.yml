@@ -1,0 +1,83 @@
+version: '3.9'
+
+services:
+  solana-trading-bot:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: solana-trading-bot
+    
+    # Environment configuration
+    environment:
+      NODE_ENV: production
+      NODE_OPTIONS: --max_old_space_size=512
+    
+    # Load .env file for API keys and secrets
+    env_file:
+      - ../.env
+    
+    # Volume mounts for persistence
+    volumes:
+      # Logs directory
+      - ./logs:/app/logs
+      # State directory (positions, metrics, heartbeats)
+      - ./state:/app/state
+      # Optional: read-only source for configuration updates
+      - ../src:/app/src:ro
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Logging
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '5'
+        labels: 'app=solana-trading-bot'
+    
+    # Health check
+    healthcheck:
+      test: ['CMD', 'node', '-e', 'require("fs").statSync("state/heartbeat.json")']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Signal handling
+    stop_grace_period: 30s
+    stop_signal: SIGTERM
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    
+    # Read-only filesystem (optional - comment out if you need write access elsewhere)
+    # read_only: true
+    
+    networks:
+      - solana-bot-network
+    
+    # Run as non-root user (optional - requires build changes)
+    # user: "1000:1000"
+
+networks:
+  solana-bot-network:
+    driver: bridge
+
+# Optional: Add volume definitions for docker-managed volumes
+volumes:
+  logs:
+    driver: local
+  state:
+    driver: local

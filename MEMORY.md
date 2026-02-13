@@ -39,6 +39,19 @@
 ---
 
 ## Current Projects
+- **Perpetuals Leverage Trading Monitor** - **LIVE (2026-02-12 22:33 EST)**
+  - Status: ACTIVE - Real-time monitoring daemon running
+  - Purpose: Scan top 10 perpetuals pairs (BTC, ETH, SOL, XRP, ADA, BNB, AVAX, DOGE, LINK, UNI) every 30 seconds
+  - Data Source: Binance Perpetuals API (free, no auth required)
+  - Indicators: RSI, Stochastic Oscillator, MACD
+  - Signals: OVERSOLD (RSI <30) and OVERBOUGHT (RSI >70)
+  - Alerts: Telegram notifications via @cryptozaddybot to Penn's account
+  - Bot Token: `8489304442:AAGauVAY4-6E59LTC7Bn4PqDT0KFiUqYn74`
+  - Chat ID: `1615266327`
+  - Location: `/Users/penn/.openclaw/workspace/perp-monitor/`
+  - Config: `.env` file with Telegram credentials
+  - Background Process: PID 46056, running as python3 daemon
+
 - **Solana Trading Bot** - **PHASE 3 IN PROGRESS (2026-02-11 00:06 EST)** - Building web dashboard
   - PHASE 1 COMPLETE: 8 core modules (bot, config, logger, Jupiter, sentiment, positions, execution, tests)
   - PHASE 2 COMPLETE (00:05): Daemon loop, alerts (Discord/Telegram), heartbeat logging, PM2/systemd/Docker configs

@@ -1,0 +1,26 @@
+{
+  "name": "investment-calculator",
+  "version": "1.0.0",
+  "description": "Laundromat deal investment calculator CLI (ROI, cash flow, payback, cap rate)",
+  "type": "module",
+  "bin": {
+    "laundro-calc": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js help-examples"
+  },
+  "keywords": [
+    "laundromat",
+    "investment",
+    "roi",
+    "cap-rate",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3"
+  }
+}

@@ -1,0 +1,74 @@
+# Systemd Service File for Solana Trading Bot Daemon
+#
+# Installation:
+#   1. Copy to /etc/systemd/system/solana-bot.service
+#      sudo cp solana-bot.service /etc/systemd/system/
+#   
+#   2. Update paths and user if needed:
+#      sudo nano /etc/systemd/system/solana-bot.service
+#   
+#   3. Reload systemd daemon:
+#      sudo systemctl daemon-reload
+#   
+#   4. Enable and start:
+#      sudo systemctl enable solana-bot.service
+#      sudo systemctl start solana-bot.service
+#
+# Usage:
+#   sudo systemctl status solana-bot        # Check status
+#   sudo systemctl logs -f solana-bot       # View logs
+#   sudo systemctl restart solana-bot       # Restart
+#   sudo systemctl stop solana-bot          # Stop gracefully
+#
+
+[Unit]
+Description=Solana Momentum Trading Bot Daemon
+Documentation=file:///opt/solana-trading-bot/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=solana
+Group=solana
+WorkingDirectory=/opt/solana-trading-bot
+
+# Set environment variables
+Environment="NODE_ENV=production"
+Environment="NODE_OPTIONS=--max_old_space_size=512"
+
+# Start command
+ExecStart=/usr/bin/node src/daemon.js
+
+# Restart policy
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=300
+StartLimitBurst=5
+
+# Resource limits
+MemoryMax=1G
+CPUQuota=80%
+
+# Shutdown settings
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Process management
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=solana-bot
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/solana-trading-bot
+
+# Logging
+# View logs with: sudo journalctl -u solana-bot -f
+
+[Install]
+WantedBy=multi-user.target

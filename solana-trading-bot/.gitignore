@@ -1,0 +1,48 @@
+# Environment variables (NEVER commit private keys!)
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+
+# Trading data
+data/positions.json
+data/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar

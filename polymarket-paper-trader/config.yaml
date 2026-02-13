@@ -1,0 +1,55 @@
+# Polymarket Paper Trading Bot Configuration
+
+strategy:
+  # Position sizing
+  position_size: 10.0              # Max $ per trade
+  target_spread: 0.03              # Target 3% profit per trade
+  
+  # Circuit breaker
+  circuit_breaker_losses: 3        # Stop trading after 3 consecutive losses
+  
+  # Execution
+  check_interval_minutes: 15       # Run bot every 15 minutes
+  execution_delay_seconds: 2       # Delay between API calls
+  
+# Markets to trade
+# Format: "market_id": "asset_name" (used for signal correlation)
+markets:
+  "540844": "bitcoin"              # "Will bitcoin hit $1m before GTA VI?"
+
+# Trading strategy parameters
+strategy_params:
+  # Mean reversion thresholds
+  oversold_threshold: 0.40         # Buy YES if probability < 40%
+  overbought_threshold: 0.60       # Sell YES if probability > 60%
+  
+  # Price momentum check (requires binance data)
+  use_binance_signals: true        # Cross-check with real price trends
+  binance_symbol: "BTCUSDT"        # Binance perpetuals symbol
+  binance_rsi_period: 14
+  binance_rsi_oversold: 30
+  binance_rsi_overbought: 70
+  
+  # Risk management
+  max_position_duration_hours: 4   # Close position after 4 hours
+  min_liquidity_usd: 10000         # Only trade markets with >$10k liquidity
+  min_24h_volume: 1000             # Only trade if 24h volume > $1000
+
+# Logging and output
+logging:
+  level: "INFO"                    # DEBUG, INFO, WARNING, ERROR
+  file: "polymarket_bot.log"
+  trades_file: "trades.json"
+
+# API settings
+api:
+  base_url: "https://gamma-api.polymarket.com"
+  timeout_seconds: 10
+  retry_attempts: 3
+  retry_delay_seconds: 2
+
+# Dashboard
+dashboard:
+  enabled: true
+  port: 5001
+  update_interval_seconds: 60

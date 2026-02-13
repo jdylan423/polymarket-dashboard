@@ -1,0 +1,231 @@
+/* Professional report styling (print-first) */
+
+@page {
+  /* Playwright's PDF margins are set via options; keep @page for print hints */
+  size: A4;
+}
+
+:root {
+  --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Garamond, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --text: #111827;
+  --muted: #6b7280;
+  --rule: #e5e7eb;
+  --accent: #0f3d6e;
+  --bg-soft: #f8fafc;
+
+  --page-max: 900px;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+  background: white;
+}
+
+body {
+  font-family: var(--serif);
+  font-size: 11.5pt;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Content wrapper so the HTML looks reasonable if opened in a browser */
+.report {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+/* Title block */
+.cover {
+  padding: 28px 0 12px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 18px;
+}
+
+.cover .title {
+  font-family: var(--sans);
+  font-weight: 750;
+  font-size: 28pt;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--accent);
+}
+
+.cover .subtitle {
+  font-family: var(--sans);
+  font-size: 12pt;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: var(--sans);
+  color: #0b1220;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 26px 0 10px;
+  padding-top: 6px;
+  border-top: 1px solid var(--rule);
+  /* Logical page breaks for major sections */
+  break-before: page;
+  page-break-before: always;
+}
+
+/* Don't force a page break before the first H1 */
+.report h1:first-of-type {
+  break-before: auto;
+  page-break-before: auto;
+}
+
+h2 { font-size: 15pt; margin: 18px 0 8px; }
+h3 { font-size: 12.5pt; margin: 14px 0 6px; }
+h4 { font-size: 11.5pt; margin: 12px 0 6px; color: #1f2937; }
+
+p { margin: 0 0 10px; }
+
+a { color: #0b4aa2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 16px 0;
+}
+
+/* TOC */
+.toc {
+  margin: 18px 0 22px;
+  padding: 14px 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+}
+
+.toc .toc-title {
+  font-family: var(--sans);
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.toc ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.toc li {
+  margin: 4px 0;
+}
+
+.toc a {
+  color: #111827;
+}
+
+/* Tables (avoid breaking across pages) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 16px;
+  font-family: var(--sans);
+  font-size: 10.5pt;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+
+th, td {
+  border: 1px solid var(--rule);
+  padding: 8px 10px;
+  vertical-align: top;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 700;
+}
+
+tr:nth-child(even) td {
+  background: #fbfdff;
+}
+
+/* Lists */
+ul, ol { margin: 0 0 12px 22px; }
+li { margin: 3px 0; }
+
+/* Code */
+pre {
+  font-family: var(--mono);
+  font-size: 9.5pt;
+  background: #0b1220;
+  color: #e5e7eb;
+  padding: 12px 14px;
+  border-radius: 10px;
+  overflow: auto;
+  margin: 12px 0 16px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.95em;
+  background: #f3f4f6;
+  padding: 0.12em 0.3em;
+  border-radius: 6px;
+}
+
+pre code { background: transparent; padding: 0; }
+
+/* Images / figures */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 14px 0 18px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figcaption {
+  font-family: var(--sans);
+  font-size: 9.5pt;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+blockquote {
+  margin: 12px 0 16px;
+  padding: 10px 14px;
+  border-left: 4px solid #c7d2fe;
+  background: #f8fafc;
+  color: #111827;
+}
+
+/* Utility page break */
+.page-break {
+  break-after: page;
+  page-break-after: always;
+}
+
+/* Print tweaks */
+@media print {
+  .report { padding: 0; }
+  a { color: inherit; }
+}
